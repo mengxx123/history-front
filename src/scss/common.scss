@@ -1,0 +1,18 @@
+.ui-table {
+    background: #FFF;
+    width: 100%;
+    max-width: 800px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 13px 10px;
+        text-align: center;
+        color: #111;
+        vertical-align: middle;
+    }
+}
+.history-table {
+    background: #FFFCFA;
+}
