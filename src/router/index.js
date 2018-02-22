@@ -5,6 +5,9 @@ const Home = resolve => require(['@/views/Home'], resolve)
 const About = resolve => require(['@/views/About'], resolve)
 const Pi = resolve => require(['@/views/Pi'], resolve)
 const Prime = resolve => require(['@/views/Prime'], resolve)
+const History = resolve => require(['@/views/History'], resolve)
+const HistoryEvent = resolve => require(['@/views/Event'], resolve)
+const HistoryEventToday = resolve => require(['@/views/EventToday'], resolve)
 const Error404 = resolve => require(['@/views/error/Error404'], resolve)
 
 Vue.use(Router)
@@ -25,6 +28,18 @@ let routes = [
     {
         path: '/about',
         component: About
+    },
+    {
+        path: '/history',
+        component: History
+    },
+    {
+        path: '/history/event',
+        component: HistoryEvent
+    },
+    {
+        path: '/history/event/today',
+        component: HistoryEventToday
     },
     {
         path: '*',
