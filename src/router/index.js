@@ -4,6 +4,7 @@ import Router from 'vue-router'
 const Home = resolve => require(['@/views/Home'], resolve)
 const About = resolve => require(['@/views/About'], resolve)
 const Pi = resolve => require(['@/views/Pi'], resolve)
+const PiTest = resolve => require(['@/views/PiTest'], resolve)
 const Prime = resolve => require(['@/views/Prime'], resolve)
 const History = resolve => require(['@/views/History'], resolve)
 const HistoryEvent = resolve => require(['@/views/Event'], resolve)
@@ -20,6 +21,10 @@ let routes = [
     {
         path: '/pi',
         component: Pi
+    },
+    {
+        path: '/pi/test',
+        component: PiTest
     },
     {
         path: '/prime',
