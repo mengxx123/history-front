@@ -12,9 +12,6 @@
                 <ui-list-item title="历史事件" to="/history/event">
                     <ui-icon slot="left" value="grade"/>
                 </ui-list-item>
-                <ui-list-item title="历史上的今天" to="/history/event/today">
-                    <ui-icon slot="left" value="grade"/>
-                </ui-list-item>
                 <ui-divider />
                 <ui-list-item title="圆周率表" to="/pi">
                     <ui-icon slot="left" value="grade"/>
