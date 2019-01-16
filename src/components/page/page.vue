@@ -1,30 +1,16 @@
 <template>
-    <ui-page :title="title || page.title" :backable="backable" ref="page">
+    <ui-page :title="title || page.title" :page="page" :backable="backable" ref="page">
         <div slot="drawer">
-            <ui-appbar title=""></ui-appbar>
+            <div class="header">
+                <img class="logo" src="/static/img/history.svg">
+            </div>
             <ui-list @itemClick="toggle()">
-                <ui-list-item title="历史朝代表" to="/">
-                    <ui-icon slot="left" value="grade"/>
-                </ui-list-item>
-                <ui-list-item title="历史年表" to="/history">
-                    <ui-icon slot="left" value="grade"/>
-                </ui-list-item>
-                <ui-list-item title="历史事件" to="/history/event">
-                    <ui-icon slot="left" value="grade"/>
-                </ui-list-item>
-                <ui-list-item title="历史上的今天" to="/history/event/today">
-                    <ui-icon slot="left" value="grade"/>
-                </ui-list-item>
-                <ui-divider />
-                <ui-list-item title="圆周率表" to="/pi">
-                    <ui-icon slot="left" value="grade"/>
-                </ui-list-item>
-                <ui-list-item title="质数表" to="/prime">
+                <ui-list-item title="首页" to="/">
                     <ui-icon slot="left" value="grade"/>
                 </ui-list-item>
             </ui-list>
             <ui-list class="ui-position-bottom" @itemClick="toggle()">
-                <ui-list-item title="关于" href="http://about.yunser.com/" target="_blank">
+                <ui-list-item title="关于" href="https://project.yunser.com/products/5e2987a00dc111e99f2863e9d9681573" target="_blank">
                     <ui-icon slot="left" value="grade"/>
                 </ui-list-item>
             </ui-list>
@@ -72,10 +58,19 @@
 </script>
 
 <style lang="scss" scoped>
-    .ui-position-bottom {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
+.header {
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.logo {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+}
+.ui-position-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 </style>

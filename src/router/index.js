@@ -2,11 +2,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 const Home = resolve => require(['@/views/Home'], resolve)
-const About = resolve => require(['@/views/About'], resolve)
+const Table = resolve => require(['@/views/Table'], resolve)
 const Pi = resolve => require(['@/views/Pi'], resolve)
+const Year = resolve => require(['@/views/HistoryYear'], resolve)
+const Jiazi = resolve => require(['@/views/Jiazi'], resolve)
 const PiTest = resolve => require(['@/views/PiTest'], resolve)
-const Prime = resolve => require(['@/views/Prime'], resolve)
-const History = resolve => require(['@/views/History'], resolve)
+// const History = resolve => require(['@/views/History'], resolve)
 const HistoryEvent = resolve => require(['@/views/Event'], resolve)
 const HistoryEventToday = resolve => require(['@/views/EventToday'], resolve)
 const Error404 = resolve => require(['@/views/error/Error404'], resolve)
@@ -19,6 +20,10 @@ let routes = [
         component: Home
     },
     {
+        path: '/table',
+        component: Table
+    },
+    {
         path: '/pi',
         component: Pi
     },
@@ -27,16 +32,8 @@ let routes = [
         component: PiTest
     },
     {
-        path: '/prime',
-        component: Prime
-    },
-    {
-        path: '/about',
-        component: About
-    },
-    {
-        path: '/history',
-        component: History
+        path: '/year',
+        component: Year
     },
     {
         path: '/history/event',
@@ -45,6 +42,10 @@ let routes = [
     {
         path: '/history/event/today',
         component: HistoryEventToday
+    },
+    {
+        path: '/jiazi',
+        component: Jiazi
     },
     {
         path: '*',
