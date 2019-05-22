@@ -1,5 +1,6 @@
 <template>
     <my-page title="历史年表">
+        <div class="common-container container">
         <ui-article>
             <h2>先秦部分</h2>
             <table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="900px" style="width:900px;margin-left:.2pt;border-collapse:collapse;border:none">
@@ -16192,6 +16193,7 @@
             <p>转载于<a href="http://www.lishi.net/" target="_blank">历史网</a></p>
             
         </ui-article>
+        </div>
     </my-page>
 </template>
 
